@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def index():
-    return {"message" : "hola mundo"}
+    return {"message" : "hola mundo desde python"}
 
 @app.get("/libros/{id}")
 def mostrar_libro(id:int):
