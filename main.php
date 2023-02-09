@@ -1,5 +1,7 @@
 <?php 
 
+#__________________________ GET __________________________
+
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, 'http://127.0.0.1:8000');
@@ -14,3 +16,5 @@ else $decoded = json_decode($response, true);
 var_dump($decoded);
 #echo ($response);
 curl_close($ch);
+
+#__________________________ POST _________________________
